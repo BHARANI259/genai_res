@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Hotel Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="background-glow top-left"></div>
+    <div class="background-glow bottom-right"></div>
+    <div class="monitor-scanline"></div>
+
+    <main class="app-container">
+        <!-- Glassmorphism Card -->
+        <div class="chat-interface">
+            <header class="chat-header">
+                <div class="brand-identity">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1>Reservation Bot</h1>
+                        <span class="status-badge"><span class="status-dot"></span> Online Booking</span>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <button id="reset-btn" class="control-btn" title="Restart Conversation">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div id="chat-window" class="chat-viewport">
+                <!-- Messages will be injected here -->
+                <div class="message bot-message welcome-message">
+                    <div class="message-content">
+                        <p>Welcome. I do the work like GeminiAi. How may I assist you with your booking
+                            today?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <div class="input-area-wrapper">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Type your request graciously..." autocomplete="off">
+                    <button id="send-btn" class="send-button">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
